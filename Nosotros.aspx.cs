@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace TrabajoPFconcesionaria4
 {
-    public partial class SiteMaster : System.Web.UI.MasterPage
+    public partial class Nosotros : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -15,5 +15,3 @@ namespace TrabajoPFconcesionaria4
         }
     }
 }
-
-

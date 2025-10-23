@@ -2,3 +2,7 @@ c:\users\dell\documents\visual studio 2010\Projects\TrabajoPFconcesionaria4\Trab
 c:\users\dell\documents\visual studio 2010\Projects\TrabajoPFconcesionaria4\TrabajoPFconcesionaria4\bin\TrabajoPFconcesionaria4.pdb
 c:\users\dell\documents\visual studio 2010\Projects\TrabajoPFconcesionaria4\TrabajoPFconcesionaria4\obj\Debug\TrabajoPFconcesionaria4.dll
 c:\users\dell\documents\visual studio 2010\Projects\TrabajoPFconcesionaria4\TrabajoPFconcesionaria4\obj\Debug\TrabajoPFconcesionaria4.pdb
+C:\Users\DELL\Documents\GitHub\TpPFConsecionaria\bin\TrabajoPFconcesionaria4.dll
+C:\Users\DELL\Documents\GitHub\TpPFConsecionaria\bin\TrabajoPFconcesionaria4.pdb
+C:\Users\DELL\Documents\GitHub\TpPFConsecionaria\obj\Debug\TrabajoPFconcesionaria4.dll
+C:\Users\DELL\Documents\GitHub\TpPFConsecionaria\obj\Debug\TrabajoPFconcesionaria4.pdb
