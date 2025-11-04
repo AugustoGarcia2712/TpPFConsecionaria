@@ -1,10 +1,10 @@
 ﻿<%@ Page Title="Autos Usados" Language="C#" MasterPageFile="~/home.Master" AutoEventWireup="true" CodeBehind="Usados.aspx.cs" Inherits="TrabajoPFconcesionaria4.Usados" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <%-- Aquí puedes agregar contenido al head --%>
-</asp:Content>
+<%--<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <%-- Aquí puedes agregar contenido al head
+</asp:Content>--%>
 
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <h2>Listado de Autos Usados Disponibles</h2>
 
     <asp:GridView 

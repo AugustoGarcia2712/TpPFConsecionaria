@@ -3,18 +3,17 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Concesionaria Morón</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900"
-        rel="stylesheet">
-    <link href="Contenido/css/style.css" rel="Stylesheet" type="text/css" />
+    <title>Concesionaria Morón</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900"
+        rel="stylesheet">
+    <link href="Contenido/css/style.css" rel="Stylesheet" type="text/css" />
 </head>
 <body>
-    
-    <form id="Form1" runat="server"> 
-        <div class="wrapper d-flex align-items-stretch">
-            <nav id="sidebar" class="order-last" class="img" style="background-image: url(images/bg_1.jpg);">
+    <form id="Form1" runat="server">
+    <div class="wrapper d-flex align-items-stretch">
+        <nav id="sidebar" class="order-last" class="img" style="background-image: url(images/bg_1.jpg);">
                 <div class="custom-menu">
                     <button type="button" id="sidebarCollapse" class="btn btn-primary"></button>
                 </div>
@@ -37,67 +36,54 @@
                         </form>
                     </div>
                     <div class="footer px-4">
-                        <p>  Copyright &copy;<script>                                                 document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a></p>
+                        <p>  Copyright &copy;<script>                                                                                                         document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a></p>
                     </div>
                 </div>
             </nav>
-            
-            <div id="content" class="p-4 p-md-5 pt-5">
-                
-                <div class="page">
-                    <div class="header">
-                        <div class="title">
-                            <h1>FVG Autos</h1>
-                        </div>
-                        
-                       
-                       <div class="loginDisplay">
-    <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
-        
-        <AnonymousTemplate>
-             
-                <a href="~/Login.aspx" id="HeadLoginStatus" runat="server" class="btn btn-sm btn-primary">
-                    Cerrar Sesión
-                </a>
-            
-        </AnonymousTemplate>
-        
-        <LoggedInTemplate>
-            Bienvenido, <span class="bold">
-                <asp:LoginName ID="HeadLoginName" runat="server" FormatString="{0}" /> 
-            </span>! [
-                <asp:LoginStatus 
-                    ID="HeadLoginStatusLogOut" 
-                    runat="server" 
-                    LogoutAction="Redirect" 
-                    LogoutText="Cerrar sesión"
-                    LogoutPageUrl="~/Login.aspx"
-                    CssClass="btn btn-sm btn-danger" /> 
-            ]
-        </LoggedInTemplate>
-    </asp:LoginView>
-</div>
-                        <div class="clear hideSkiplink">
-                            <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
-                                <Items>
-                                    <%-- Menú principal aquí --%>
-                                </Items>
-                            </asp:Menu>
-                        </div>
+        <div id="content" class="p-4 p-md-5 pt-5">
+            <div class="page">
+                <div class="header">
+                    <div class="title">
+                        <h1>
+                            FVG Autos</h1>
                     </div>
-                    
-                    <div class="main">
-                        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+                    <div class="loginDisplay">
+                        <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                            <AnonymousTemplate>
+                                <a href="~/Login.aspx" id="HeadLoginStatus" runat="server" class="btn btn-sm btn-primary">
+                                    Cerrar Sesión </a>
+                            </AnonymousTemplate>
+                            <LoggedInTemplate>
+                                Bienvenido, <span class="bold">
+                                    <asp:LoginName ID="HeadLoginName" runat="server" FormatString="{0}" />
+                                </span>! [
+                                <asp:LoginStatus ID="HeadLoginStatusLogOut" runat="server" LogoutAction="Redirect"
+                                    LogoutText="Cerrar sesión" LogoutPageUrl="~/Login.aspx" CssClass="btn btn-sm btn-danger" />
+                                ]
+                            </LoggedInTemplate>
+                        </asp:LoginView>
                     </div>
-                    
-                    <div class="clear"></div>
-                </div> 
-                
-                <div class="footer">
+                    <div class="clear hideSkiplink">
+                        <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false"
+                            IncludeStyleBlock="false" Orientation="Horizontal">
+                            <Items>
+                                <%-- Menú principal aquí --%>
+                            </Items>
+                        </asp:Menu>
+                    </div>
                 </div>
-            </div> 
-            
-            </div> </form> <script src="Contenido/js/jquery.min.js"></script>
+                <div class="main">
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+                </div>
+                <div class="clear">
+                </div>
+            </div>
+            <div class="footer">
+            </div>
+        </div>
+    </div>
+    </form>
+    <script src="Contenido/js/jquery.min.js"></script>
     <script src="Contenido/js/popper.js"></script>
     <script src="Contenido/js/bootstrap.min.js"></script>
     <script src="Contenido/js/main.js"></script>
