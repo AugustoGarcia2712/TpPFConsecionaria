@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Nosotros" Language="C#" MasterPageFile="~/home.Master" AutoEventWireup="true" CodeBehind="Nosotros.aspx.cs" Inherits="TrabajoPFconcesionaria4.Nosotros" %>
+﻿                                <%@ Page Title="Nosotros" Language="C#" MasterPageFile="~/home.Master" AutoEventWireup="true" CodeBehind="Nosotros.aspx.cs" Inherits="TrabajoPFconcesionaria4.Nosotros" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -8,7 +8,7 @@
 
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <img src="images/nosotros-concesionaria.jpg" alt="Concesionaria Morón" class="img-fluid rounded shadow-sm" />
+                    <img src="FotosConcesionaria/concesionaria1.JPG" alt="Concesionaria Morón" class="img-fluid rounded shadow-sm" />
                 </div>
                 <div class="col-md-6">
                     <p>

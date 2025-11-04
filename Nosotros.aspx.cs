@@ -11,7 +11,18 @@ namespace TrabajoPFconcesionaria4
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            // Verifica si hay sesión activa
+            if (Session["Usuario"] == null)
+            {
+                Response.Redirect("login.aspx");
+            }
         }
+
+        // El método btnSalir_Click está comentado correctamente:
+        // protected void btnSalir_Click(object sender, EventArgs e)
+        // {
+        //     Session.Clear(); // Cierra la sesión
+        //     Response.Redirect("login.aspx");
+        // }
     }
 }
