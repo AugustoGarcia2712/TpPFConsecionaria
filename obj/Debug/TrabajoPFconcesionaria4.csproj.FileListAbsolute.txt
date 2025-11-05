@@ -6,3 +6,4 @@ C:\Users\DELL\Documents\GitHub\TpPFConsecionaria\bin\TrabajoPFconcesionaria4.dll
 C:\Users\DELL\Documents\GitHub\TpPFConsecionaria\bin\TrabajoPFconcesionaria4.pdb
 C:\Users\DELL\Documents\GitHub\TpPFConsecionaria\obj\Debug\TrabajoPFconcesionaria4.dll
 C:\Users\DELL\Documents\GitHub\TpPFConsecionaria\obj\Debug\TrabajoPFconcesionaria4.pdb
+C:\Users\DELL\Documents\GitHub\TpPFConsecionaria\obj\Debug\TrabajoPFconcesionaria4.csprojResolveAssemblyReference.cache
