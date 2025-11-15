@@ -11,7 +11,7 @@
             background-color: #f5f5f5;
             margin: 0;
             padding: 0;
-            overflow-x: hidden; 
+            overflow-x: hidden;
         }
         .contenedor {
             margin: 100px auto 50px auto;
@@ -36,6 +36,7 @@
             cursor: pointer;
             font-weight: bold;
             margin-bottom: 15px;
+            display: inline-block; 
         }
 
         .tabla-ingreso {
@@ -63,7 +64,7 @@
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
-            table-layout: fixed; 
+            table-layout: fixed;
         }
         .grid th {
             background-color: #007bff;
@@ -98,8 +99,11 @@
     <form id="form1" runat="server">
         <div class="contenedor">
 
+            <asp:Button ID="btnVolver" runat="server" 
+                Text="← Volver a Nosotros" 
+                CssClass="btn-volver" 
+                PostBackUrl="~/Nosotros.aspx" Width="72px" />
             
-
             <h2>Autos Usados Disponibles</h2>
 
             
@@ -121,7 +125,7 @@
                 </tr>
             </table>
 
-           
+            
             <asp:GridView ID="gvAutos" runat="server" CssClass="grid" AutoGenerateColumns="False"
                 DataKeyNames="AutoID"
                 OnRowEditing="gvAutos_RowEditing"
