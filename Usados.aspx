@@ -4,15 +4,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
     <title>Autos Usados</title>
-
     <style>
-        body {
+        body
+        {
             font-family: Arial, sans-serif;
             background-color: #f5f5f5;
             margin: 0;
             padding: 0;
         }
-        .contenedor {
+        .contenedor
+        {
             margin: 100px auto 50px auto;
             width: 90%;
             max-width: 1200px;
@@ -21,34 +22,41 @@
             border-radius: 10px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
-        h2 {
+        h2
+        {
             text-align: center;
             color: #333;
         }
-        .grid {
+        .grid
+        {
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
         }
-        .grid th {
+        .grid th
+        {
             background-color: #007bff;
             color: white;
             padding: 10px;
             text-align: center;
         }
-        .grid td {
+        .grid td
+        {
             padding: 8px;
             text-align: center;
             border-bottom: 1px solid #ccc;
             vertical-align: middle;
         }
-        .grid tr:nth-child(even) {
+        .grid tr:nth-child(even)
+        {
             background-color: #f9f9f9;
         }
-        .grid tr:hover {
+        .grid tr:hover
+        {
             background-color: #eef6ff;
         }
-        .btn {
+        .btn
+        {
             border: none;
             padding: 6px 12px;
             border-radius: 6px;
@@ -56,14 +64,55 @@
             color: white;
             font-weight: bold;
         }
-        .btn-editar { background-color: #28a745; }
-        .btn-eliminar { background-color: #dc3545; }
-        .btn:hover { opacity: 0.9; }
-        .tabla-contenedor { overflow-x: auto; }
+        .btn-editar
+        {
+            background-color: #28a745;
+        }
+        .btn-eliminar
+        {
+            background-color: #dc3545;
+        }
+        .btn:hover
+        {
+            opacity: 0.9;
+        }
+        .tabla-contenedor
+        {
+            overflow-x: auto;
+        }
+        
+        .btn-guardar
+        {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        
+        .btn-cancelar
+        {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        
+        /* Evitar zoom en modo edición */
+        .grid td input
+        {
+            width: 95%;
+            padding: 5px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
     </style>
-
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
     <script>
         function confirmarEliminacion(boton) {
             Swal.fire({
@@ -83,25 +132,16 @@
             return false;
         }
     </script>
-
 </head>
 <body>
-<form id="form1" runat="server">
+    <form id="form1" runat="server">
     <div class="contenedor">
-        <h2>🚗 Autos Usados Disponibles</h2>
-
+        <h2>
+            Autos Usados Disponibles</h2>
         <div class="tabla-contenedor">
-            <asp:GridView 
-                ID="gvAutos" 
-                runat="server" 
-                CssClass="grid" 
-                AutoGenerateColumns="False"
-                DataKeyNames="AutoID"
-                OnRowEditing="gvAutos_RowEditing"
-                OnRowUpdating="gvAutos_RowUpdating"
-                OnRowCancelingEdit="gvAutos_RowCancelingEdit"
-                OnRowDeleting="gvAutos_RowDeleting">
-
+            <asp:GridView ID="gvAutos" runat="server" CssClass="grid" AutoGenerateColumns="False"
+                DataKeyNames="AutoID" OnRowEditing="gvAutos_RowEditing" OnRowUpdating="gvAutos_RowUpdating"
+                OnRowCancelingEdit="gvAutos_RowCancelingEdit" OnRowDeleting="gvAutos_RowDeleting">
                 <Columns>
                     <asp:BoundField DataField="AutoID" HeaderText="ID" ReadOnly="True" />
                     <asp:BoundField DataField="NombreAuto" HeaderText="Nombre" />
@@ -111,22 +151,23 @@
                     <asp:BoundField DataField="Combustible" HeaderText="Combustible" />
                     <asp:BoundField DataField="TipoMotor" HeaderText="Motor" />
                     <asp:BoundField DataField="Precio" HeaderText="Precio" />
-
                     <asp:TemplateField HeaderText="Acciones">
                         <ItemTemplate>
-                            <asp:LinkButton ID="btnEditar" runat="server" CommandName="Edit"
-                                Text="✏️ Editar" CssClass="btn btn-editar" />
-
-                            <asp:LinkButton ID="btnEliminar" runat="server" Text="🗑️ Eliminar"
-                                CommandName="Delete" CssClass="btn btn-eliminar"
-                                OnClientClick="return confirmarEliminacion(this);" />
+                            <asp:LinkButton ID="btnEditar" runat="server" CommandName="Edit" Text="Editar" CssClass="btn btn-editar" />
+                            <asp:LinkButton ID="btnEliminar" runat="server" CommandName="Delete" Text="Eliminar"
+                                CssClass="btn btn-eliminar" OnClientClick="return confirmarEliminacion(this);" />
                         </ItemTemplate>
+                        <EditItemTemplate>
+                            <asp:LinkButton ID="btnGuardar" runat="server" CommandName="Update" Text="Guardar"
+                                CssClass="btn btn-guardar" />
+                            <asp:LinkButton ID="btnCancelar" runat="server" CommandName="Cancel" Text="Cancelar"
+                                CssClass="btn btn-cancelar" />
+                        </EditItemTemplate>
                     </asp:TemplateField>
                 </Columns>
-
             </asp:GridView>
         </div>
     </div>
-</form>
+    </form>
 </body>
 </html>
