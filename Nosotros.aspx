@@ -1,4 +1,4 @@
-﻿                                <%@ Page Title="Nosotros" Language="C#" MasterPageFile="~/home.Master" AutoEventWireup="true" CodeBehind="Nosotros.aspx.cs" Inherits="TrabajoPFconcesionaria4.Nosotros" %>
+﻿ <%@ Page Title="Nosotros" Language="C#" MasterPageFile="~/home.Master" AutoEventWireup="true" CodeBehind="Nosotros.aspx.cs" Inherits="TrabajoPFconcesionaria4.Nosotros" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
